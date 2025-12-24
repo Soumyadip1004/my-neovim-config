@@ -14,7 +14,21 @@ if not (vim.env.LAZY or (vim.uv or vim.loop).fs_stat(lazypath)) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-vim.opt.conceallevel = 2
+
+-- lua/filetype.lua or init.lua
+vim.filetype.add {
+  extension = {
+    mdx = "markdown.mdx",
+  },
+}
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "markdown.mdx"},
+  callback = function()
+    vim.opt_local.conceallevel = 2
+    vim.opt_local.concealcursor = "nc"
+  end,
+})
 
 -- validate that lazy is available
 if not pcall(require, "lazy") then
