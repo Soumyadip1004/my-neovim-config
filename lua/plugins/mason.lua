@@ -14,6 +14,7 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         "biome",
+        "markdown-oxide",
 
         -- install formatters
         "stylua",
