@@ -14,6 +14,11 @@ return {
             bg = "NONE", -- keep transparency
           },
 
+          -- Neo-tree: visible cursor line
+          NeoTreeCursorLine = {
+            bg = colors.bg_highlight or "#2a2e36",
+          },
+
           CursorLineNr = {
             fg = "#2FD57E",
             bold = true,
