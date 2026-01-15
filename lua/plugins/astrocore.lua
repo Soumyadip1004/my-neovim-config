@@ -71,6 +71,7 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
+        ["."] = { "<cmd>redo<cr>", desc = "Redo" },
         ["H"] = { "^", desc = "Start of line" },
         ["L"] = { "$", desc = "End of line" },
 

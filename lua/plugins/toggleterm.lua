@@ -1,6 +1,7 @@
 return {
   {
     "akinsho/toggleterm.nvim",
+    enabled = false,
     opts = {
       size = 20,
       open_mapping = [[<leader>t]],

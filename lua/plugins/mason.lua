@@ -11,7 +11,7 @@ return {
       ensure_installed = {
         -- install language servers
         "lua-language-server",
-        "typescript-language-server",
+        -- "typescript-language-server",
         "tailwindcss-language-server",
         "biome",
         "markdown-oxide",
