@@ -1,9 +1,11 @@
 return {
   "nvim-telescope/telescope.nvim",
   tag = "v0.2.0",
+  lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope-file-browser.nvim",
+    "jonarrien/telescope-cmdline.nvim",
   },
   require("telescope").setup {
     defaults = {
@@ -38,6 +40,25 @@ return {
           hidden = true,
           -- respect_gitignore = true,
         },
+        cmdline = {
+          -- Adjust telescope picker size and layout
+          picker = {
+            layout_config = {
+              width = 120,
+              height = 25,
+            },
+          },
+          -- Adjust your mappings
+          mappings = {
+            complete = "<Tab>",
+            run_selection = "<C-CR>",
+            run_input = "<CR>",
+          },
+          -- Triggers any shell command using overseer.nvim (`:!`)
+          overseer = {
+            enabled = true,
+          },
+        },
       },
     }
 
@@ -54,6 +75,13 @@ return {
         }
       end,
       desc = "File explorer",
+    },
+
+    -- Cmdline (Telescope)
+    {
+      ":",
+      ":Telescope cmdline<CR>",
+      desc = "Cmdline",
     },
 
     -- a

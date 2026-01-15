@@ -18,7 +18,6 @@
 		],
 		"description": "JavaScript + JSX formatter rules for Next.js projects"
 	},
-
 	"Biome › Tailwind class sorting": {
 		"prefix": "biome-tailwind-sort",
 		"body": [
@@ -35,7 +34,6 @@
 		],
 		"description": "Enable safe Tailwind class sorting for className and utility helpers"
 	},
-
 	"Biome › Scripts (standard)": {
 		"prefix": "biome-scripts",
 		"body": [
@@ -45,7 +43,6 @@
 		],
 		"description": "Common Biome scripts for single-package repositories"
 	},
-
 	"Biome › Scripts (Turborepo)": {
 		"prefix": "biome-scripts-turbo",
 		"body": [
@@ -54,7 +51,6 @@
 		],
 		"description": "Root-level Biome scripts optimized for Turborepo workspaces"
 	},
-
 	"Biome › Root config (Turborepo)": {
 		"prefix": "biome-config-root-turbo",
 		"body": [
@@ -108,7 +104,6 @@
 		],
 		"description": "Base Biome configuration for Turborepo root (shared by all packages)"
 	},
-
 	"Biome › Extend › Next.js (Turborepo)": {
 		"prefix": "biome-extend-next-turbo",
 		"body": [
@@ -149,7 +144,6 @@
 		],
 		"description": "Next.js package-level Biome config extending Turborepo root"
 	},
-
 	"Biome › Extend › NestJS (Turborepo)": {
 		"prefix": "biome-extend-nest-turbo",
 		"body": [
@@ -228,7 +222,6 @@
 		],
 		"description": "Strict NestJS Biome config for backend packages in a Turborepo"
 	},
-
 	"Biome › Full config (Next.js standalone)": {
 		"prefix": "biome-config-next",
 		"body": [
@@ -246,6 +239,11 @@
 			"    \"indentStyle\": \"space\",",
 			"    \"indentWidth\": 2,",
 			"    \"lineWidth\": 100",
+			"  },",
+			"  \"css\": {",
+			"    \"parser\": {",
+			"      \"tailwindDirectives\": true",
+			"    }",
 			"  },",
 			"  \"javascript\": {",
 			"    \"formatter\": {",

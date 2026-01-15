@@ -15,6 +15,7 @@ return {
         "tailwindcss-language-server",
         "biome",
         "markdown-oxide",
+        "json-lsp",
 
         -- install formatters
         "stylua",

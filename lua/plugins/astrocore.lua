@@ -41,6 +41,7 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = true, -- sets vim.opt.spell
+        spelllang = { "en_us" },
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
       },
@@ -72,7 +73,6 @@ return {
         },
         ["H"] = { "^", desc = "Start of line" },
         ["L"] = { "$", desc = "End of line" },
-        ["<C-m>"] = { "o", desc = "New line below" },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus

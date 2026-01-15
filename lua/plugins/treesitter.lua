@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
@@ -8,6 +7,9 @@ return {
   opts = {
     ensure_installed = {
       "lua",
+      "html",
+      "tsx",
+      "javascript",
       "vim",
       -- add more arguments for adding more treesitter parsers
     },
