@@ -10,6 +10,7 @@ return {
       enable_hex = true,
       enable_rgb = true,
       enable_hsl = true,
+      exclude_filetypes = {"css"},
     },
   },
 }
